@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rho"
+version = "0.0"
+dependencies = [
+    "jax",
+    "equinox",
+    "quadax",
+    "sympy",
+    "gmpy2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "jupyter",
+    "matplotlib",
+    "pytest"
+]
+
+[tool.isort]
+profile = "black"
